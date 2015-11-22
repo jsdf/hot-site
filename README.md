@@ -6,7 +6,18 @@ a convention-over-configuration webpack dev server with hot module replacement
 ## usage
 
 ```
+npm init
 npm install --save hot-site
+```
+
+directory structure:
+```
+your_project/
+├── index.html
+├── package.json
+├── src
+│   └── index.js
+└── webpack.config.js
 ```
 
 `webpack.config.js`:
@@ -25,6 +36,19 @@ module.exports = makeHotSiteConfig({
     "start": "hot-site"
   }
 } 
+```
+
+`index.html`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="/static/index.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
 ```
 
 ```
