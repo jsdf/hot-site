@@ -1,6 +1,7 @@
 # hot-site
-a convention-over-configuration webpack dev server with hot module replacement,
-to make spinning up new projects faster and less boilerplatey
+a convention-over-configuration webpack dev server with hot module replacement
+
+💡spin up new projects faster and with less boilerplate
 
 ## usage
 
@@ -20,7 +21,6 @@ module.exports = makeHotSiteConfig({
 `package.json`:
 ```json
 {
-  // ...
   "scripts": {
     "start": "hot-site"
   }
